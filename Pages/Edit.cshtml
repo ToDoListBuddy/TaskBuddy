@@ -1,0 +1,65 @@
+﻿@page
+@model TaskBuddy.Pages.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Taskuri</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Taskuri.Id" />
+            <div class="form-group">
+                <label asp-for="Taskuri.Name" class="control-label"></label>
+                <input asp-for="Taskuri.Name" class="form-control" />
+                <span asp-validation-for="Taskuri.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Taskuri.Type" class="control-label"></label><br>
+                <select asp-for="Taskuri.Type" asp-items=TaskBuddy.Models.Taskuri.TypeOptions()></select>
+                <span asp-validation-for="Taskuri.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Taskuri.Description" class="control-label"></label>
+                <input asp-for="Taskuri.Description" class="form-control" />
+                <span asp-validation-for="Taskuri.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Taskuri.Priority" class="control-label"></label><br>
+                <select asp-for="Taskuri.Priority" asp-items=TaskBuddy.Models.Taskuri.PryoOptions()></select>
+                <span asp-validation-for="Taskuri.Priority" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Taskuri.CreatedAt" class="control-label"></label>
+                <input asp-for="Taskuri.CreatedAt" class="form-control" />
+                <span asp-validation-for="Taskuri.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Taskuri.DeadLine" class="control-label"></label>
+                <input asp-for="Taskuri.DeadLine" class="form-control" />
+                <span asp-validation-for="Taskuri.DeadLine" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Taskuri.IsCompleted" /> @Html.DisplayNameFor(model => model.Taskuri.IsCompleted)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
