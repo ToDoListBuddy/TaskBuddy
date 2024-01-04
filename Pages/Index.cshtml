@@ -117,10 +117,14 @@
         <!-- Script to handle the popup -->
         <script>
             $(document).ready(function () {
-                // Show the popup when the button is clicked
-                $("#showPopup").click(function () {
+
+                function showPopup() { 
                     $("#popupModal").modal('show');
-                });
+                }
+
+                $("#showPopup").click(showPopup);
+
+                setInterval(showPopup, 1 * 5 * 1000);
             });
         </script>
     </tbody>
