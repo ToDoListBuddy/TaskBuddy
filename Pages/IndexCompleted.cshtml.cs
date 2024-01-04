@@ -32,32 +32,84 @@ namespace TaskBuddy.Pages
         [BindProperty(SupportsGet = true)]
         public string? Description { get; set; }
 
-        public string DateSort { get; set; }
+        [BindProperty]
+        public List<string> SelectedPrio { get; set; }
 
-
-        public async Task OnGetAsync(string sortOrder)
+        public async Task OnPostAsync()
         {
-            DateSort = sortOrder == "Date" ? "date_desc" : "Date";
+            // SelectedPrio will contain the values of checked checkboxes
+            if (SelectedPrio != null && SelectedPrio.Count > 0)
+            {
+                // Filter the list based on selected priorities
+                var taskuri = from task in _context.Taskuri
+                              select task;
 
+
+                taskuri = taskuri.Where(item => SelectedPrio.Contains(item.Priority));
+                Taskuri = await taskuri.ToListAsync();
+            }
+        }
+
+
+        public string DateSort { get; set; } = "desc";
+        public string TagSort { get; set; } = "asc";
+
+
+        public async Task OnGetAsync(string dateSort, string typeSort)
+        {
             var taskuri = from task in _context.Taskuri
                           select task;
-            switch (sortOrder)
+
+            if (!string.IsNullOrEmpty(dateSort))
             {
+                DateSort = dateSort == "asc" ? "desc" : "asc";
+                switch (dateSort)
+                {
 
-                case "Date":
-                    taskuri = taskuri.OrderBy(s => s.CreatedAt);
-                    break;
-                case "date_desc":
-                    taskuri = taskuri.OrderByDescending(s => s.CreatedAt);
-                    break;
+                    case "asc":
+                        taskuri = taskuri.OrderBy(s => s.CreatedAt);
+                        break;
+                    case "desc":
+                        taskuri = taskuri.OrderByDescending(s => s.CreatedAt);
+                        break;
 
+                }
+            }
+
+            if (!string.IsNullOrEmpty(typeSort))
+            {
+                TagSort = typeSort == "asc" ? "desc" : "asc";
+                switch (typeSort)
+                {
+
+                    case "asc":
+                        taskuri = taskuri.OrderBy(s => s.Type);
+                        break;
+                    case "desc":
+                        taskuri = taskuri.OrderByDescending(s => s.Type);
+                        break;
+
+                }
             }
 
             if (!string.IsNullOrEmpty(SearchString))
             {
-                taskuri = taskuri.Where(t => t.Priority.Contains(SearchString));
+                taskuri = taskuri.Where(t => t.Name.Contains(SearchString));
             }
             Taskuri = await taskuri.ToListAsync();
+
+
+            List<Taskuri> TaskNotification = taskuri.ToList();
+            foreach (Taskuri myTask in TaskNotification)
+                if (myTask.IsDeadlineNear())
+                {
+                    Console.WriteLine("The task is nearing its deadline!");
+
+                }
+                else
+                {
+                    Console.WriteLine("The task is not nearing its deadline yet.");
+                }
         }
     }
 }
