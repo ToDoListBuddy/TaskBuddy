@@ -4,8 +4,9 @@
     "\\Areas",
     "\\Data",
     "\\Models",
+    "\\Pages",
     "\\Tests"
   ],
-  "SelectedNode": "\\TaskBuddy.sln",
+  "SelectedNode": "\\Pages\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

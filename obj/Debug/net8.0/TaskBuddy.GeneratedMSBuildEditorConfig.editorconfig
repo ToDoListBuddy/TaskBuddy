@@ -17,67 +17,67 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TaskBuddy
 build_property.RootNamespace = TaskBuddy
-build_property.ProjectDir = E:\Facultate\An1\Sem1\MOPS\TaskBuddy\
+build_property.ProjectDir = E:\Facultate\An1\Sem1\MOPS\SVNTaskBuddy\trunk\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Facultate\An1\Sem1\MOPS\TaskBuddy
+build_property.MSBuildProjectDirectory = E:\Facultate\An1\Sem1\MOPS\SVNTaskBuddy\trunk
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Areas/Identity/Pages/_ViewStart.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/Create.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/Delete.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/Details.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/Edit.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/Error.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/Index.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/IndexCompleted.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/IndexCompleted.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXhDb21wbGV0ZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/Privacy.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/Shared/_LoginPartial.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/_ViewImports.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/_ViewStart.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Facultate/An1/Sem1/MOPS/TaskBuddy/Pages/Shared/_Layout.cshtml]
+[E:/Facultate/An1/Sem1/MOPS/SVNTaskBuddy/trunk/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3apka8bnty

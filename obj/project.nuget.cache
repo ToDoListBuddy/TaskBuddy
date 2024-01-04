@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8dweWXIwq5A6HsH8h8y2OK/CRbiW0lYLP5Z1mbfmkGsMvrafxieYUaeUrq78HJY5zneg4urnjdvMD3zbn1W74w==",
+  "dgSpecHash": "h8I+00vVve2jwwk+PfOmibHDW2XNL7eC83o+dupotIOdRomQu3SFYxgkRH/0BpcPMN4/5DYIvQkWQmXr8quWgQ==",
   "success": true,
-  "projectFilePath": "E:\\Facultate\\An1\\Sem1\\MOPS\\TaskBuddy\\TaskBuddy.csproj",
+  "projectFilePath": "E:\\Facultate\\An1\\Sem1\\MOPS\\SVNTaskBuddy\\trunk\\TaskBuddy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VALY\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\VALY\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
