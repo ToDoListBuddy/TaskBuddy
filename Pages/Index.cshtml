@@ -14,9 +14,23 @@
 <form>
     <p>
         Title: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" />
+        <input type="submit" value="Search" />
     </p>
 </form>
+
+<form method="post">
+    <label for="prio0Checkbox">Prio 0</label>
+    <input type="checkbox" id="prio0Checkbox" name="selectedPrio" value="Prio 0">
+
+    <label for="prio1Checkbox">Prio 1</label>
+    <input type="checkbox" id="prio1Checkbox" name="selectedPrio" value="Prio 1">
+
+    <label for="prio2Checkbox">Prio 2</label>
+    <input type="checkbox" id="prio2Checkbox" name="selectedPrio" value="Prio 2">
+
+    <input type="submit" value="Filter" />
+</form>
+<br />
 
 <table class="table">
     <thead>
@@ -26,8 +40,9 @@
                 @Html.DisplayNameFor(model => model.Taskuri[0].Name)
             </th>
             <th>
-
+                <a asp-page="./Index" asp-route-typeSort="@Model.TagSort">
                 @Html.DisplayNameFor(model => model.Taskuri[0].Type)
+                </a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Taskuri[0].Description)
@@ -36,7 +51,7 @@
                 @Html.DisplayNameFor(model => model.Taskuri[0].Priority)
             </th>
             <th>
-                <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort">
+                <a asp-page="./Index" asp-route-dateSort="@Model.DateSort">
                 @Html.DisplayNameFor(model => model.Taskuri[0].CreatedAt)
                 </a>
             </th>
