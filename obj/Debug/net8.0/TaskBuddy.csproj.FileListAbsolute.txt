@@ -1023,3 +1023,4 @@ C:\Users\Razvan\Desktop\taskbuddy\TaskBuddy\obj\Debug\net8.0\refint\TaskBuddy.dl
 C:\Users\Razvan\Desktop\taskbuddy\TaskBuddy\obj\Debug\net8.0\TaskBuddy.pdb
 C:\Users\Razvan\Desktop\taskbuddy\TaskBuddy\obj\Debug\net8.0\TaskBuddy.genruntimeconfig.cache
 C:\Users\Razvan\Desktop\taskbuddy\TaskBuddy\obj\Debug\net8.0\ref\TaskBuddy.dll
+C:\Users\Razvan\Desktop\taskbuddy\TaskBuddy\bin\Debug\net8.0\Bogus.dll

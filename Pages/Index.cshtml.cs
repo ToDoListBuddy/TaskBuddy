@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Build.Framework;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using TaskBuddy.Class;
 using TaskBuddy.Data;
 using TaskBuddy.Models;
 
@@ -34,7 +35,7 @@ namespace TaskBuddy.Pages
         [BindProperty]
         public List<string> SelectedPrio { get; set; }
 
-        public async Task OnPostAsync()
+        public async Task<IActionResult> OnPostAsync()
         {
             // SelectedPrio will contain the values of checked checkboxes
             if (SelectedPrio != null && SelectedPrio.Count > 0)
@@ -46,7 +47,16 @@ namespace TaskBuddy.Pages
 
                 taskuri = taskuri.Where(item => SelectedPrio.Contains(item.Priority));
                 Taskuri = await taskuri.ToListAsync();
+
             }
+            AddMock mocker = new AddMock();
+            var tasks = mocker.GenerateTasks(10);
+            foreach (var task in tasks)
+            {
+                _context.Taskuri.Add(task);
+            }
+                await _context.SaveChangesAsync();
+                return RedirectToPage("./Index");
         }
 
         public string DateSort { get; set; } = "desc";
@@ -108,6 +118,7 @@ namespace TaskBuddy.Pages
             {
                 Console.WriteLine("The task is not nearing its deadline yet.");
             }
+
         }
     }
 }

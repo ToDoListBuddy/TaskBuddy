@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskBuddy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebfa459dc8a87c751767b3df8ba5d87e34c45fbf")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskBuddy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskBuddy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
