@@ -13921,19 +13921,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Razvan\\.nuget\\packages\\": {}
+    "C:\\Users\\VALY\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Razvan\\Desktop\\taskbuddy\\TaskBuddy\\TaskBuddy.csproj",
+      "projectUniqueName": "E:\\Facultate\\An1\\Sem1\\MOPS\\TaskBuddy\\TaskBuddy.csproj",
       "projectName": "TaskBuddy",
-      "projectPath": "C:\\Users\\Razvan\\Desktop\\taskbuddy\\TaskBuddy\\TaskBuddy.csproj",
-      "packagesPath": "C:\\Users\\Razvan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Razvan\\Desktop\\taskbuddy\\TaskBuddy\\obj\\",
+      "projectPath": "E:\\Facultate\\An1\\Sem1\\MOPS\\TaskBuddy\\TaskBuddy.csproj",
+      "packagesPath": "C:\\Users\\VALY\\.nuget\\packages\\",
+      "outputPath": "E:\\Facultate\\An1\\Sem1\\MOPS\\TaskBuddy\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Razvan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\VALY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13941,6 +13946,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "c:\\program files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -14045,7 +14051,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
